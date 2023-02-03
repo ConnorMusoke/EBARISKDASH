@@ -1,4 +1,4 @@
-const API_KEY ="CwU3_QkITsW9u9ChjJRp0sYHNFVDf7RLXamwrYePJx9HZTka_4gHqZfWDRVRNizG";
+const API_KEY ="<PLEASE ADD YOUR API KEY HERE>";
 const charts = [
 { id: "12637163", dataset: 1, container: "#chart-0", visual: null, options: null },
 { id: "12106443", dataset: 2, container: "#chart-1", visual: null, options: null },
