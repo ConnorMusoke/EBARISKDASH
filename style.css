@@ -7,18 +7,15 @@ body {
 
 #header {
   font-weight: 300;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 0;
+  text-align: center;
 }
 
 /* Controls */
 #controls {
   display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 2rem;
-}
-
-.control {
-  margin-right: 2.5rem;
+  justify-content: center;
+  margin: 0 1rem 2rem;
 }
 
 .control-header {
@@ -26,10 +23,13 @@ body {
   padding: 0.5rem 0;
   padding-right: 1rem;
   border-bottom: 1px solid rgb(0 0 0 / 15%);
+  text-align: center;
+  color: #666666;
 }
 
 #controls select {
   max-width: 200px;
+  text-align: center;
 }
 
 /* Chart */
@@ -41,7 +41,7 @@ body {
   row-gap: 2rem;
   width: 100%;
   max-width: 1000px;
-  margin: 2rem;
+  margin: auto;
 }
 
 .chart {
