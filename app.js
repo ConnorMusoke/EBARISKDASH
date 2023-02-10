@@ -2,10 +2,11 @@ const API_KEY = '<PLEASE ADD YOUR API KEY HERE>';
 
 // Add the chart ID's under `id` ↓
 const charts = [
-  { id: '12687654', dataset: 1, container: '#chart-0', visual: null, options: null },
-  { id: '12106443', dataset: 2, container: '#chart-1', visual: null, options: null },
-  { id: '12105881', dataset: 2, container: '#chart-2', visual: null, options: null },
-  { id: '12106012', dataset: 3, container: '#chart-3', visual: null, options: null },
+  { id: '12687654', dataset: 1, container: '#chart-0', fl_data_name: 'data', visual: null, options: null },
+  { id: '12106443', dataset: 2, container: '#chart-1', fl_data_name: 'data', visual: null, options: null },
+  { id: '12105881', dataset: 2, container: '#chart-2', fl_data_name: 'data', visual: null, options: null },
+  { id: '12106012', dataset: 3, container: '#chart-3', fl_data_name: 'data', visual: null, options: null },
+  { id: '12709893', dataset: 4, container: '#chart-4', fl_data_name: 'rows', visual: null, options: null },
 ];
 
 // Filter variables.
@@ -46,7 +47,7 @@ function updateCharts(data, filter_value) {
     const dataset = filterByValue(data, chart, filter_value);
 
     // Update chart.
-    chart.options.data = { data: dataset };
+    chart.options.data = { [chart.fl_data_name]: dataset };
     chart.visual.update(chart.options);
   });
 }
@@ -56,6 +57,8 @@ function buildCharts(data, base_charts) {
     // Get chart info.
     const chart = charts[i];
 
+    // if (i === 4) debugger
+
     // Get data.
     const dataset = filterByValue(data, chart, initial_filter_value);
 
@@ -63,7 +66,7 @@ function buildCharts(data, base_charts) {
     chart.options = base_chart;
     chart.options.api_key = API_KEY;
     chart.options.container = chart.container;
-    chart.options.data = { data: dataset }; // Assuming a single Flourish dataset named `data`.
+    chart.options.data = { [chart.fl_data_name]: dataset };
 
     // Build visual.
     chart.visual = new Flourish.Live(chart.options);

@@ -48,3 +48,9 @@ body {
   border: 1px solid rgb(0 0 0 / 7%);
   box-shadow: 2px 2px 35px rgb(0 0 0 / 4%);
 }
+
+.asset-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 4rem auto;
+}
