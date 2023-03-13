@@ -3,8 +3,8 @@ const API_KEY = "28DlyyeGXK7wNNsF0NZUfPHVUnNdkEvb3muP_fnv9fZ3u4U1FSDFrLvu2QUEpud
 // Add the chart ID's under `id` ↓
 const charts = [
     { id: "13041152", dataset: 1, container: "#chart-4", fl_data_name: "rows", visual: null, options: null },
-    { id: "13041369", dataset: 2, container: "#chart-0", fl_data_name: "rows", visual: null, options: null },
-    { id: "13041358", dataset: 3, container: "#chart-1", fl_data_name: "rows", visual: null, options: null },
+    { id: "13041358", dataset: 2, container: "#chart-0", fl_data_name: "rows", visual: null, options: null },
+    { id: "13041369", dataset: 3, container: "#chart-1", fl_data_name: "rows", visual: null, options: null },
 ];
 
 // Filter variables.
@@ -52,9 +52,9 @@ function updateCharts(data, filter_value) {
 
 function buildCharts(data, base_charts) {
     base_charts.forEach((base_chart, i) => {
-    // Get chart info.
+        // Get chart info.
         const chart = charts[i];
-
+        
         // if (i === 4) debugger
 
         // Get data.
