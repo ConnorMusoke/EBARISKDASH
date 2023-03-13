@@ -2,15 +2,13 @@ const API_KEY = "28DlyyeGXK7wNNsF0NZUfPHVUnNdkEvb3muP_fnv9fZ3u4U1FSDFrLvu2QUEpud
 
 // Add the chart ID's under `id` ↓
 const charts = [
-    { id: "12687654", dataset: 1, container: "#chart-0", fl_data_name: "data", visual: null, options: null },
-    { id: "12106443", dataset: 2, container: "#chart-3", fl_data_name: "data", visual: null, options: null },
-    { id: "12105881", dataset: 2, container: "#chart-1", fl_data_name: "data", visual: null, options: null },
-    { id: "12106012", dataset: 3, container: "#chart-2", fl_data_name: "data", visual: null, options: null },
-    { id: "12709893", dataset: 4, container: "#chart-4", fl_data_name: "rows", visual: null, options: null },
+    { id: "13041152", dataset: 1, container: "#chart-4", fl_data_name: "rows", visual: null, options: null },
+    { id: "13041369", dataset: 2, container: "#chart-0", fl_data_name: "rows", visual: null, options: null },
+    { id: "13041358", dataset: 3, container: "#chart-1", fl_data_name: "rows", visual: null, options: null },
 ];
 
 // Filter variables.
-const FILTER_COLUMN = "NRI-FORMAT";
+const FILTER_COLUMN = "Year";
 let initial_filter_value = "";
 
 // Helpers.
